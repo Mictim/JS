@@ -22,7 +22,7 @@ downBtn.addEventListener('click', () => {
 })
 
 document.addEventListener('keydown', event => {
-    if(event.key === 'ArrowUp') {
+    if (event.key === 'ArrowUp') {
         changeSlide('up');
     } else if (event.key === 'ArrowDown') {
         changeSlide('down')
@@ -31,11 +31,11 @@ document.addEventListener('keydown', event => {
 
 function changeSlide(direction) {
     if (direction === 'up') {
-       activeSlideIndex++;
-       if (activeSlideIndex === slidesCount) {
-           activeSlideIndex = 0;
-       }     
-    } else if (direction === 'down'){
+        activeSlideIndex++;
+        if (activeSlideIndex === slidesCount) {
+            activeSlideIndex = 0;
+        }
+    } else if (direction === 'down') {
         activeSlideIndex--;
         if (activeSlideIndex < 0) {
             activeSlideIndex = slidesCount - 1;
